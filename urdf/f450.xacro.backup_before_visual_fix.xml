@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="f450">
+
+  <!-- ================= MATERIALS ================= -->
+
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="1 0 0 1"/>
+  </material>
+
+  <material name="gray">
+    <color rgba="0.79216 0.81961 0.93333 1"/>
+  </material>
+
+
+  <!-- ================= DRONE FRAME ================= -->
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/base_link.STL"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+
+  <!-- ================= FRONT ARM ================= -->
+
+  <link name="front_arm_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/front_arm_link.STL"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <joint name="front_arm_link_joint" type="fixed">
+    <origin xyz="0.0980914901926783 0.0980914949967722 0.171"
+            rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="front_arm_link"/>
+  </joint>
+
+
+  <!-- ================= BACK ARM ================= -->
+
+  <link name="back_arm_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/back_arm_link.STL"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="back_arm_link_joint" type="fixed">
+    <origin xyz="-0.098091 -0.098091 0.171"
+            rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="back_arm_link"/>
+  </joint>
+
+
+<!-- ================= MOTOR LINKS ================= -->
+
+<link name="motor1_link">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.018" length="0.035"/>
+    </geometry>
+    <material name="gray"/>
+  </visual>
+</link>
+
+<link name="motor2_link">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.018" length="0.035"/>
+    </geometry>
+    <material name="gray"/>
+  </visual>
+</link>
+
+<link name="motor3_link">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.018" length="0.035"/>
+    </geometry>
+    <material name="gray"/>
+  </visual>
+</link>
+
+<link name="motor4_link">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.018" length="0.035"/>
+    </geometry>
+    <material name="gray"/>
+  </visual>
+</link>
+
+<!-- ================= MOTOR JOINTS ================= -->
+
+<!-- MOTOR 1 -->
+<joint name="motor1_joint" type="fixed">
+  <origin xyz="0.15988 0.15988 0.173" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor1_link"/>
+</joint>
+
+<!-- MOTOR 2 -->
+<joint name="motor2_joint" type="fixed">
+  <origin xyz="-0.15988 -0.15988 0.173" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor2_link"/>
+</joint>
+
+<!-- MOTOR 3 -->
+<joint name="motor3_joint" type="fixed">
+  <origin xyz="0.15988 -0.15988 0.173" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor3_link"/>
+</joint>
+
+<!-- MOTOR 4 -->
+<joint name="motor4_joint" type="fixed">
+  <origin xyz="-0.15988 0.15988 0.173" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor4_link"/>
+</joint>
+
+  <!-- ================= BATTERY ================= -->
+
+  <link name="battery_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/battery_link.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+  </link>
+
+  <joint name="battery_link_joint" type="fixed">
+    <origin xyz="-0.025435 -0.00022216 0.09"
+            rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="battery_link"/>
+  </joint>
+
+
+  <!-- ================================================= -->
+  <!-- ================= PROPELLER 1 ==================== -->
+  <!-- ================================================= -->
+
+  <link name="rotor1">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/rotor1.STL"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="rotor1_joint" type="continuous">
+    <origin xyz="0 0 0.037"
+            rpy="0 0 0"/>
+    <parent link="motor1_link"/>
+    <child link="rotor1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <!-- ================================================= -->
+  <!-- ================= PROPELLER 2 ==================== -->
+  <!-- ================================================= -->
+
+  <link name="rotor2">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/rotor1.STL"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="rotor2_joint" type="continuous">
+    <origin xyz="0 0 0.037"
+            rpy="0 0 0"/>
+    <parent link="motor2_link"/>
+    <child link="rotor2"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <!-- ================================================= -->
+  <!-- ================= PROPELLER 3 ==================== -->
+  <!-- ================================================= -->
+
+  <link name="rotor3">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/rotor1.STL"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="rotor3_joint" type="continuous">
+    <origin xyz="0 0 0.037"
+            rpy="0 0 0"/>
+    <parent link="motor3_link"/>
+    <child link="rotor3"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <!-- ================================================= -->
+  <!-- ================= PROPELLER 4 ==================== -->
+  <!-- ================================================= -->
+
+  <link name="rotor4">
+    <visual>
+      <geometry>
+        <mesh filename="package://f450/meshes/rotor1.STL"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="rotor4_joint" type="continuous">
+    <origin xyz="0 0 0.037"
+            rpy="0 0 0"/>
+    <parent link="motor4_link"/>
+    <child link="rotor4"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+</robot>
