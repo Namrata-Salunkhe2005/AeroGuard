@@ -1,0 +1,4 @@
+source;share/f450/local_setup.bash
+source;share/f450/local_setup.dsv
+source;share/f450/local_setup.sh
+source;share/f450/local_setup.zsh
