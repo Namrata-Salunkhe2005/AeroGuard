@@ -1,0 +1,4 @@
+Invoking command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/namrata/drone_ws/src/autonomous_drone/build/f450 -- -j8 -l8
+Invoked command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/namrata/drone_ws/src/autonomous_drone/build/f450 -- -j8 -l8
+Invoking command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/namrata/drone_ws/src/autonomous_drone/build/f450
+Invoked command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/namrata/drone_ws/src/autonomous_drone/build/f450

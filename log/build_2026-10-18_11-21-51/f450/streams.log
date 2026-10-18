@@ -1,0 +1,63 @@
+[0.008s] Invoking command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/namrata/drone_ws/src/autonomous_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namrata/drone_ws/src/autonomous_drone/install/f450
+[0.215s] -- The C compiler identification is GNU 11.4.0
+[0.375s] -- The CXX compiler identification is GNU 11.4.0
+[0.385s] -- Detecting C compiler ABI info
+[0.443s] -- Detecting C compiler ABI info - done
+[0.449s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.450s] -- Detecting C compile features
+[0.450s] -- Detecting C compile features - done
+[0.453s] -- Detecting CXX compiler ABI info
+[0.511s] -- Detecting CXX compiler ABI info - done
+[0.516s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.516s] -- Detecting CXX compile features
+[0.517s] -- Detecting CXX compile features - done
+[0.522s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.631s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.689s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.788s] -- Configuring done
+[0.790s] -- Generating done
+[0.791s] -- Build files have been written to: /home/namrata/drone_ws/src/autonomous_drone/build/f450
+[0.793s] Invoked command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/namrata/drone_ws/src/autonomous_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namrata/drone_ws/src/autonomous_drone/install/f450
+[0.795s] Invoking command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/namrata/drone_ws/src/autonomous_drone/build/f450 -- -j8 -l8
+[0.823s] Invoked command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/namrata/drone_ws/src/autonomous_drone/build/f450 -- -j8 -l8
+[0.831s] Invoking command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/namrata/drone_ws/src/autonomous_drone/build/f450
+[0.838s] -- Install configuration: ""
+[0.838s] -- Execute custom install script
+[0.839s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/urdf/f450.xacro
+[0.845s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/urdf/f450.xacro.backup
+[0.851s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/urdf/f450.xacro.backup_before_visual_fix
+[0.859s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/urdf/f450_working_backup.xacro
+[0.865s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/back_arm_link.STL
+[0.871s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/base_link.STL
+[0.877s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/battery_link.STL
+[0.883s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/d435_link.STL
+[0.890s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/front_arm_link.STL
+[0.896s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/jetson_link.STL
+[0.902s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/leg_link.STL
+[0.908s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/motor_link.STL
+[0.914s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/prop_guard_link.STL
+[0.920s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/rotor1.STL
+[0.926s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/rotor2.STL
+[0.932s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/rotor3.STL
+[0.940s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/rotor4.STL
+[0.945s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/meshes/t265_link.STL
+[0.952s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/launch/f450_display.launch.py
+[0.958s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/launch/f450_gazebo.launch.py
+[0.964s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/worlds/f450_model.sdf
+[0.971s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/worlds/f450_world.sdf
+[0.978s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/ament_index/resource_index/package_run_dependencies/f450
+[0.984s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/ament_index/resource_index/parent_prefix_path/f450
+[0.991s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/environment/ament_prefix_path.sh
+[0.997s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/environment/ament_prefix_path.dsv
+[1.004s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/environment/path.sh
+[1.010s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/environment/path.dsv
+[1.015s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/local_setup.bash
+[1.022s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/local_setup.sh
+[1.028s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/local_setup.zsh
+[1.035s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/local_setup.dsv
+[1.042s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/package.dsv
+[1.048s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/ament_index/resource_index/packages/f450
+[1.055s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/cmake/f450Config.cmake
+[1.061s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/cmake/f450Config-version.cmake
+[1.066s] -- Symlinking: /home/namrata/drone_ws/src/autonomous_drone/install/f450/share/f450/package.xml
+[1.074s] Invoked command in '/home/namrata/drone_ws/src/autonomous_drone/build/f450' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/namrata/drone_ws/src/autonomous_drone/build/f450
